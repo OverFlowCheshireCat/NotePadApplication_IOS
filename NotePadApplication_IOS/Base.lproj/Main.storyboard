@@ -38,6 +38,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xow-Ug-JyT" kind="show" id="f7O-RG-MlQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -54,7 +57,8 @@
                     <navigationItem key="navigationItem" title="NotePad" id="uLo-96-NmA">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="u8t-Tg-1TH">
                             <connections>
-                                <segue destination="Xow-Ug-JyT" kind="show" id="8bV-TG-75t"/>
+                                <action selector="writeMemo:" destination="BYZ-38-t0r" id="mdc-h2-j01"/>
+                                <segue destination="Xow-Ug-JyT" kind="show" id="zwx-bV-7qr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -116,6 +120,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WdM-2a-eCk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="75Z-3g-MxQ"/>
                     <connections>
                         <outlet property="content" destination="zs9-Hd-V8Z" id="4ih-Xy-kiZ"/>
                         <outlet property="head" destination="0jT-fB-F7L" id="9rp-FT-DDS"/>
@@ -123,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PId-g9-XAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2015" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aTF-zl-sy3">
@@ -144,4 +149,7 @@
             <point key="canvasLocation" x="161" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f7O-RG-MlQ"/>
+    </inferredMetricsTieBreakers>
 </document>
